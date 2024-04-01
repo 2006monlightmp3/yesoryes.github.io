@@ -1,0 +1,23 @@
+/* Estilos CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", sans-serif; /* Agregar la fuente Silkscreen */
+    color: white;
+    background-image: url('bg5.gif');
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100vh;
+}
+
+#text-center {
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-bottom: 20px; /* Espacio entre el texto y el botón */
+}
+
+button {
+    margin-top: 20px; /* Margen superior para el botón */
+}

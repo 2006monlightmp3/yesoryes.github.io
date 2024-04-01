@@ -1,0 +1,55 @@
+/* Estilos CSS */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bg5.gif');
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100vh;
+    color: white;
+    font-family: "Silkscreen", sans-serif; /* Establecer la fuente Silkscreen para todo el cuerpo */
+   
+}
+
+/* Estilos para la fuente Silkscreen */
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#sound-control {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#content-container {
+    text-align: center;
+    margin-top: 50px; /* Espacio entre el encabezado y el contenido */
+}
+
+#footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#program-title {
+    font-size: 40px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio entre el título y el botón */
+}
+
+#new-game-button {
+    font-size: 20px; /* Tamaño del botón */
+}

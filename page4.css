@@ -1,0 +1,27 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", sans-serif; /* Agregar la fuente Silkscreen */
+    color: white;
+    background: url('bg5.gif');
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: flex-start; /* Comenzar desde la parte superior */
+    height: 100vh;
+}
+
+#title-margin {
+    margin-top: 80px; /* Margen superior para el texto */
+}
+
+#image-container {
+    margin-top: 20px; /* Margen superior para la imagen */
+}
+
+button {
+    margin-top: 20px; /* Margen superior para el botón */
+}

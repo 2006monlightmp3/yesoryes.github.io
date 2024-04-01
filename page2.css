@@ -1,0 +1,48 @@
+/* Estilos CSS */
+body {
+    margin: 0;
+    font-family: "Silkscreen", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg5.gif');
+    background-size: cover;
+    color: white; /* Color de texto */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 2;
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e7f3ff;
+    color: #020202;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño de fuente */
+}

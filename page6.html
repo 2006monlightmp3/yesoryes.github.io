@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Silkscreen", sans-serif; /* Agregar la fuente Silkscreen */
+            color: white;
+            background-image: url('bg5.gif');
+            background-size: cover;
+            display: flex;
+            flex-direction: column; /* Alineación vertical */
+            align-items: center; /* Centrar horizontalmente */
+            justify-content: center; /* Centrar verticalmente */
+            height: 100vh;
+        }
+
+        #text-center-medium {
+            text-align: center; /* Centrar el texto horizontalmente */
+            margin-bottom: 20px; /* Espacio entre el texto y los botones */
+        }
+
+        #button-container {
+            display: flex; /* Mostrar los botones en línea */
+            justify-content: center; /* Centrar los botones horizontalmente */
+        }
+
+        button {
+            margin-top: 20px; /* Margen superior para los botones */
+            margin-right: 10px; /* Espacio entre los botones */
+        }
+    </style>
+</head>
+<body>
+    <div id="text-center-medium">
+        <h1> SO </h1>
+        <p>Knowing all of this, que decis lindo?</p>
+    </div>
+    <div id="button-container">
+        <button id="yes-button" onclick="growButton()">De 1 reina</button>
+        <button id="no-button" onclick="moveButton()">No</button>
+    </div>
+
+    <script>
+        // Variables para el tamaño y posición inicial del botón "De 1 reina"
+        var currentSize = 16; // Tamaño inicial
+        var intervalId = null; // ID del intervalo para el crecimiento progresivo
+        var button = document.getElementById("yes-button");
+        var growthAmount = 1; // Cantidad de crecimiento por clic en "No"
+
+        // Función para hacer crecer progresivamente el botón "De 1 reina"
+        function growButton() {
+            clearInterval(intervalId); // Detener intervalo anterior (si existe)
+            currentSize += growthAmount; // Incrementar tamaño según la cantidad configurada
+            button.style.fontSize = currentSize + "px"; // Aplicar nuevo tamaño
+            if (currentSize >= 40) {
+                window.location.href = "page7.html"; // Redirigir cuando alcanza el tamaño máximo
+            }
+        }
+
+        // Función para mover el botón "No" aleatoriamente y hacer crecer el botón "De 1 reina"
+        function moveButton() {
+            var noButton = document.getElementById("no-button");
+            var xPos = Math.random() * (window.innerWidth - noButton.offsetWidth);
+            var yPos = Math.random() * (window.innerHeight - noButton.offsetHeight);
+            noButton.style.position = "absolute";
+            noButton.style.left = xPos + "px";
+            noButton.style.top = yPos + "px";
+            growButton(); // Hacer crecer el botón "De 1 reina"
+        }
+    </script>
+</body>
+</html>
